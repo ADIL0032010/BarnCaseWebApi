@@ -1,0 +1,142 @@
+2026-02-26 09:17:38.976 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:17:39.414 +03:00 [INF] Now listening on: https://localhost:7283
+2026-02-26 09:17:39.415 +03:00 [INF] Now listening on: http://localhost:5286
+2026-02-26 09:17:39.471 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-26 09:17:39.472 +03:00 [INF] Hosting environment: Development
+2026-02-26 09:17:39.473 +03:00 [INF] Content root path: C:\Users\Adil\source\repos\BarnCaseWebApi\BarnCaseWebApi
+2026-02-26 09:17:40.448 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/swagger - null null
+2026-02-26 09:17:40.654 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/swagger - 301 0 null 213.1184ms
+2026-02-26 09:17:40.664 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/swagger/index.html - null null
+2026-02-26 09:17:40.742 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/swagger/index.html - 200 null text/html;charset=utf-8 77.4312ms
+2026-02-26 09:17:40.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/_framework/aspnetcore-browser-refresh.js - null null
+2026-02-26 09:17:40.782 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/_vs/browserLink - null null
+2026-02-26 09:17:40.788 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/_framework/aspnetcore-browser-refresh.js - 200 16475 application/javascript; charset=utf-8 9.8392ms
+2026-02-26 09:17:40.850 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.8766ms
+2026-02-26 09:17:40.949 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/swagger/v1/swagger.json - null null
+2026-02-26 09:17:40.971 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 21.9005ms
+2026-02-26 09:18:44.453 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:18:44.847 +03:00 [INF] Now listening on: https://localhost:7283
+2026-02-26 09:18:44.848 +03:00 [INF] Now listening on: http://localhost:5286
+2026-02-26 09:18:44.899 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-26 09:18:44.900 +03:00 [INF] Hosting environment: Development
+2026-02-26 09:18:44.901 +03:00 [INF] Content root path: C:\Users\Adil\source\repos\BarnCaseWebApi\BarnCaseWebApi
+2026-02-26 09:18:45.420 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+2026-02-26 09:18:45.619 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/ - 404 0 null 204.0853ms
+2026-02-26 09:18:45.626 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/, Response status code: 404
+2026-02-26 09:18:47.954 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+2026-02-26 09:18:47.962 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/ - 404 0 null 8.6299ms
+2026-02-26 09:18:47.966 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/, Response status code: 404
+2026-02-26 09:19:28.661 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:19:28.964 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://[::1]:1433: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+ ---> System.Net.Sockets.SocketException (10048): Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-02-26 09:19:57.724 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:19:58.057 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://[::1]:1433: address already in use.
+ ---> Microsoft.AspNetCore.Connections.AddressInUseException: Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+ ---> System.Net.Sockets.SocketException (10048): Normal olarak her yuva adresi (iletişim kuralı/ağ adresi/bağlantı noktası) için yalnızca bir kullanıma izin veriliyor.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindAsync(ListenOptions[] listenOptions, AddressBindContext context, Func`2 useHttps, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__15_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-02-26 09:21:01.255 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:21:01.496 +03:00 [INF] Now listening on: https://localhost:7283
+2026-02-26 09:21:01.497 +03:00 [INF] Now listening on: http://localhost:5286
+2026-02-26 09:21:01.548 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-26 09:21:01.549 +03:00 [INF] Hosting environment: Development
+2026-02-26 09:21:01.550 +03:00 [INF] Content root path: C:\Users\Adil\source\repos\BarnCaseWebApi\BarnCaseWebApi
+2026-02-26 09:21:01.971 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+2026-02-26 09:21:02.126 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/ - 404 0 null 159.6377ms
+2026-02-26 09:21:02.132 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/, Response status code: 404
+2026-02-26 09:23:29.457 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:23:29.773 +03:00 [INF] Now listening on: https://localhost:7283
+2026-02-26 09:23:29.774 +03:00 [INF] Now listening on: http://localhost:5286
+2026-02-26 09:23:29.813 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-26 09:23:29.815 +03:00 [INF] Hosting environment: Development
+2026-02-26 09:23:29.816 +03:00 [INF] Content root path: C:\Users\Adil\source\repos\BarnCaseWebApi\BarnCaseWebApi
+2026-02-26 09:23:30.421 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+2026-02-26 09:23:30.597 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/ - 404 0 null 180.7483ms
+2026-02-26 09:23:30.603 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/, Response status code: 404
+2026-02-26 09:23:32.249 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+2026-02-26 09:23:32.258 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/ - 404 0 null 9.3015ms
+2026-02-26 09:23:32.262 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/, Response status code: 404
+2026-02-26 09:37:56.915 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:37:57.206 +03:00 [INF] Now listening on: https://localhost:7283
+2026-02-26 09:37:57.208 +03:00 [INF] Now listening on: http://localhost:5286
+2026-02-26 09:37:57.252 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-26 09:37:57.253 +03:00 [INF] Hosting environment: Development
+2026-02-26 09:37:57.253 +03:00 [INF] Content root path: C:\Users\Adil\source\repos\BarnCaseWebApi\BarnCaseWebApi
+2026-02-26 09:37:57.872 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+2026-02-26 09:37:58.041 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/ - 404 0 null 172.5278ms
+2026-02-26 09:37:58.046 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/, Response status code: 404
+2026-02-26 09:40:54.533 +03:00 [INF] User profile is available. Using 'C:\Users\Adil\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-02-26 09:40:54.812 +03:00 [INF] Now listening on: https://localhost:7283
+2026-02-26 09:40:54.813 +03:00 [INF] Now listening on: http://localhost:5286
+2026-02-26 09:40:54.861 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-02-26 09:40:54.862 +03:00 [INF] Hosting environment: Development
+2026-02-26 09:40:54.862 +03:00 [INF] Content root path: C:\Users\Adil\source\repos\BarnCaseWebApi\BarnCaseWebApi
+2026-02-26 09:40:55.600 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/ - null null
+2026-02-26 09:40:55.771 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/ - 404 0 null 175.9589ms
+2026-02-26 09:40:55.776 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/, Response status code: 404
+2026-02-26 09:41:05.702 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/index.html - null null
+2026-02-26 09:41:05.711 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 404 0 null 10.021ms
+2026-02-26 09:41:05.716 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/index.html, Response status code: 404
+2026-02-26 09:41:09.791 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/index.html - null null
+2026-02-26 09:41:09.800 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 404 0 null 9.0124ms
+2026-02-26 09:41:09.804 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/index.html, Response status code: 404
+2026-02-26 09:41:10.407 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/index.html - null null
+2026-02-26 09:41:10.413 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 404 0 null 7.3536ms
+2026-02-26 09:41:10.418 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/index.html, Response status code: 404
+2026-02-26 09:41:10.750 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/index.html - null null
+2026-02-26 09:41:10.756 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 404 0 null 6.6859ms
+2026-02-26 09:41:10.760 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/index.html, Response status code: 404
+2026-02-26 09:41:11.646 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/index.html - null null
+2026-02-26 09:41:11.652 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 404 0 null 6.1968ms
+2026-02-26 09:41:11.655 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/index.html, Response status code: 404
+2026-02-26 09:41:12.140 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/index.html - null null
+2026-02-26 09:41:12.146 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 404 0 null 6.6009ms
+2026-02-26 09:41:12.150 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/index.html, Response status code: 404
+2026-02-26 09:41:12.469 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7283/index.html - null null
+2026-02-26 09:41:12.476 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7283/index.html - 404 0 null 6.9512ms
+2026-02-26 09:41:12.479 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7283/index.html, Response status code: 404
